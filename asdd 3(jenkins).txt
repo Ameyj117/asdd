@@ -1,1 +1,70 @@
 https://chatgpt.com/share/6ae88b60-3ab8-83ee-92b6-635e7a907436
+
+
+
+Step 1: Install Java JDK 21
+Link: https://adoptium.net/temurin/releases/
+- Version: 21
+- OS: Windows
+- Architecture: x64
+- Package: JDK
+- Download and install .msi.
+Step 2: Verify Java Installation
+Open CMD or PowerShell:
+java -version
+javac -version
+
+
+Step 3: Download Jenkins
+Link: https://www.jenkins.io/download/
+- Select LTS.
+- Download Windows installer (.msi).
+- Install Jenkins.
+Step 4: Configure Jenkins
+- Installation type: Default
+- Port: 8080
+- Java path: Installed JDK path
+- Complete installation.
+Step 5: Launch Jenkins
+Open browser:
+http://localhost:8080
+
+
+Step 6: Unlock Jenkins
+Open CMD:
+notepad "C:\Program Files\Jenkins\secrets\initialAdminPassword"
+
+
+Copy the password and paste it into Jenkins.
+Step 7: Install Plugins
+- Select Install suggested plugins.
+- Wait for installation.
+Step 8: Create Admin Account
+- Enter username.
+- Enter password.
+- Enter full name.
+- Enter email.
+- Click Save and Finish.
+Step 9: Create Hello World Project
+- Open Jenkins Dashboard.
+- Click New Item.
+- Project Name: Hello-World
+- Select Freestyle project.
+- Click OK.
+Step 10: Configure Build
+- Scroll to Build Steps.
+- Click Add build step.
+- Select Execute Windows batch command.
+Enter:
+echo Hello World
+echo Welcome to Jenkins!
+echo My first Jenkins build is successful.
+
+
+Step 11: Run Build
+- Click Save.
+- Click Build Now.
+- Open Build History.
+- Click build number #1.
+- Click Console Output.
+Step 12: Verify Output
