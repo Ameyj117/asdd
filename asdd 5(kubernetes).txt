@@ -1,0 +1,2 @@
+https://chatgpt.com/share/6ae897ba-18cc-83ec-963f-fb5ed750b231
+https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
