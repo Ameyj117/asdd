@@ -1,1 +1,29 @@
 https://chatgpt.com/share/6ae88aad-f174-83e8-be29-28e24474d699
+
+git --version
+
+git config --global user.name "Your Name"
+
+git config --global user.email "your@email.com"
+
+git config --list
+
+mkdir GitProject
+
+cd GitProject
+
+git init
+
+git status
+
+echo "# My First Git Project" > README.md
+
+git add .
+
+git commit -m "Initial commit"
+
+git branch -M main
+
+git remote add origin https://github.com/your-username/GitProject.git
+
+git push -u origin main
